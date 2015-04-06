@@ -1,0 +1,12 @@
+ <template name="images">
+	{{> uploadForm}}
+	<ul>
+	{{#each imgs}}
+		<li><img src="{{this.url store='thumbs_1'}}"/><img src="{{url thumbs}}"/></li>
+	{{/each}}
+	</ul>
+</template>
+ 
+<template name="uploadForm">
+	<input type="file" class="myFileInput" />
+</template>
