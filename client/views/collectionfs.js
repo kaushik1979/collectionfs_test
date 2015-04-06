@@ -8,10 +8,10 @@
     },
     imgs: function() {
 
-      // Meteor.subscribe('PUB_IMAGES');
-      // return ImagesPub.find();
+      Meteor.subscribe('PUB_IMAGES');
+      return ImagesPub.find();
 
-      return Images.find();
+      // return Images.find();
     }
   });
  
